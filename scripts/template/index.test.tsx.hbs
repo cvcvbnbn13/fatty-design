@@ -1,0 +1,43 @@
+import React from 'react'
+import { fireEvent, render, screen } from '@testing-library/react'
+import {{componentName}} from './index'
+
+describe('{{componentName}}', () => {
+  test('renders normal {{componentName}}', () => {
+    render(<{{componentName}}>Click Me</{{componentName}}>)
+
+    const target = screen.getByText(/Click Me/i)
+
+    expect(target).toBeInTheDocument(
+      
+    )
+  })
+
+/**
+  test('renders small {{componentName}}', () => {
+    render(
+      <{{componentName}} type="primary" size="small" testId="fatty-btn-small">
+        Click Me
+      </{{componentName}}>
+    )
+
+    expect(screen.getByTestId('fatty-btn-small')).toBeInTheDocument()
+
+    expect(screen.getByTestId('fatty-btn-small')).toHaveClass('fatty-btn-small')
+  })
+
+  test('should support click', () => {
+    const onClick = jest.fn()
+    render(
+      <{{componentName}} type="primary" testId="fatty-btn-primary" onClick={onClick}>
+        Click Me
+      </{{componentName}}>
+    )
+
+    const element = screen.getByText(/click me/i)
+    fireEvent.click(element)
+
+    expect(onClick).toBeCalled()
+  })
+**/
+})

@@ -1,0 +1,30 @@
+import type { Meta, StoryObj } from '@storybook/react'
+import {{componentName}} from './index'
+import React from 'react'
+
+const meta = {
+  title: 'Example/{{componentName}}',
+  component: {{componentName}},
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
+  argTypes: {
+    testId: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+} satisfies Meta<typeof {{componentName}}>
+
+export default meta
+type Story = StoryObj<typeof meta>
+
+export const Basic = () => {
+  return (
+    <React.Fragment>
+      <{{componentName}} type="primary">{{componentName}}</{{componentName}}>
+    </React.Fragment>
+  )
+}

@@ -8,11 +8,4 @@ describe('Tag', () => {
     const target = screen.getByText(/Click Me/i)
     expect(target).toBeInTheDocument()
   })
-
-  // test('should support onClose', () => {
-  //   const onClose = jest.fn()
-  //   render(<Tag>Click Me</Tag>)
-  //   const target = screen.getByText(/Click Me/i)
-  //   expect(target).toBeInTheDocument()
-  // })
 })
