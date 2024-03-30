@@ -1,0 +1,1940 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.fatty-btn {
+  line-height: 1.5715;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  color: rgba(0, 0, 0, 0.85);
+  border-color: #d9d9d9;
+  background: #fff;
+
+  > .fattyicon {
+    line-height: 1;
+  }
+
+  &,
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+.fatty-btn:not([disabled]):hover {
+  text-decoration: none;
+}
+.fatty-btn:not([disabled]):active {
+  outline: 0;
+  box-shadow: none;
+}
+.fatty-btn[disabled] {
+  cursor: not-allowed;
+}
+.fatty-btn[disabled] > * {
+  pointer-events: none;
+}
+.fatty-btn-large {
+  height: 40px;
+  padding: 6.4px 15px;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.fatty-btn-medium {
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+.fatty-btn-small {
+  height: 24px;
+  padding: 0px 7px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+.fatty-btn > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn:hover,
+.fatty-btn:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: #fff;
+}
+.fatty-btn:hover > a:only-child,
+.fatty-btn:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn:hover > a:only-child::after,
+.fatty-btn:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: #fff;
+}
+.fatty-btn:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn[disabled],
+.fatty-btn[disabled]:hover,
+.fatty-btn[disabled]:focus,
+.fatty-btn[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn[disabled] > a:only-child,
+.fatty-btn[disabled]:hover > a:only-child,
+.fatty-btn[disabled]:focus > a:only-child,
+.fatty-btn[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn[disabled] > a:only-child::after,
+.fatty-btn[disabled]:hover > a:only-child::after,
+.fatty-btn[disabled]:focus > a:only-child::after,
+.fatty-btn[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn:hover,
+.fatty-btn:focus,
+.fatty-btn:active {
+  text-decoration: none;
+  background: #fff;
+}
+.fatty-btn > span {
+  display: inline-block;
+}
+.fatty-btn-primary {
+  color: #fff;
+  border-color: #1890ff;
+  background: #1890ff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+.fatty-btn-primary > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-primary > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-primary:hover,
+.fatty-btn-primary:focus {
+  color: #fff;
+  border-color: #40a9ff;
+  background: #40a9ff;
+}
+.fatty-btn-primary:hover > a:only-child,
+.fatty-btn-primary:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-primary:hover > a:only-child::after,
+.fatty-btn-primary:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-primary:active {
+  color: #fff;
+  border-color: #096dd9;
+  background: #096dd9;
+}
+.fatty-btn-primary:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-primary:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-primary[disabled],
+.fatty-btn-primary[disabled]:hover,
+.fatty-btn-primary[disabled]:focus,
+.fatty-btn-primary[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-primary[disabled] > a:only-child,
+.fatty-btn-primary[disabled]:hover > a:only-child,
+.fatty-btn-primary[disabled]:focus > a:only-child,
+.fatty-btn-primary[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-primary[disabled] > a:only-child::after,
+.fatty-btn-primary[disabled]:hover > a:only-child::after,
+.fatty-btn-primary[disabled]:focus > a:only-child::after,
+.fatty-btn-primary[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-group .fatty-btn-primary:not(:first-child):not(:last-child) {
+  border-right-color: #40a9ff;
+  border-left-color: #40a9ff;
+}
+.fatty-btn-group
+  .fatty-btn-primary:not(:first-child):not(:last-child):disabled {
+  border-color: #d9d9d9;
+}
+.fatty-btn-group .fatty-btn-primary:first-child:not(:last-child) {
+  border-right-color: #40a9ff;
+}
+.fatty-btn-group .fatty-btn-primary:first-child:not(:last-child)[disabled] {
+  border-right-color: #d9d9d9;
+}
+.fatty-btn-group .fatty-btn-primary:last-child:not(:first-child),
+.fatty-btn-group .fatty-btn-primary + .fatty-btn-primary {
+  border-left-color: #40a9ff;
+}
+.fatty-btn-group .fatty-btn-primary:last-child:not(:first-child)[disabled],
+.fatty-btn-group .fatty-btn-primary + .fatty-btn-primary[disabled] {
+  border-left-color: #d9d9d9;
+}
+.fatty-btn-ghost {
+  color: rgba(0, 0, 0, 0.85);
+  border-color: #d9d9d9;
+  background: transparent;
+}
+.fatty-btn-ghost > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-ghost > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-ghost:hover,
+.fatty-btn-ghost:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.fatty-btn-ghost:hover > a:only-child,
+.fatty-btn-ghost:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-ghost:hover > a:only-child::after,
+.fatty-btn-ghost:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-ghost:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.fatty-btn-ghost:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-ghost:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-ghost[disabled],
+.fatty-btn-ghost[disabled]:hover,
+.fatty-btn-ghost[disabled]:focus,
+.fatty-btn-ghost[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-ghost[disabled] > a:only-child,
+.fatty-btn-ghost[disabled]:hover > a:only-child,
+.fatty-btn-ghost[disabled]:focus > a:only-child,
+.fatty-btn-ghost[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-ghost[disabled] > a:only-child::after,
+.fatty-btn-ghost[disabled]:hover > a:only-child::after,
+.fatty-btn-ghost[disabled]:focus > a:only-child::after,
+.fatty-btn-ghost[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dashed {
+  color: rgba(0, 0, 0, 0.85);
+  border-color: #d9d9d9;
+  background: #fff;
+  border-style: dashed;
+}
+.fatty-btn-dashed > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dashed > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dashed:hover,
+.fatty-btn-dashed:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: #fff;
+}
+.fatty-btn-dashed:hover > a:only-child,
+.fatty-btn-dashed:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dashed:hover > a:only-child::after,
+.fatty-btn-dashed:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dashed:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: #fff;
+}
+.fatty-btn-dashed:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dashed:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dashed[disabled],
+.fatty-btn-dashed[disabled]:hover,
+.fatty-btn-dashed[disabled]:focus,
+.fatty-btn-dashed[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-dashed[disabled] > a:only-child,
+.fatty-btn-dashed[disabled]:hover > a:only-child,
+.fatty-btn-dashed[disabled]:focus > a:only-child,
+.fatty-btn-dashed[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dashed[disabled] > a:only-child::after,
+.fatty-btn-dashed[disabled]:hover > a:only-child::after,
+.fatty-btn-dashed[disabled]:focus > a:only-child::after,
+.fatty-btn-dashed[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-danger {
+  color: #fff;
+  border-color: #ff4d4f;
+  background: #ff4d4f;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+.fatty-btn-danger > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-danger > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-danger:hover,
+.fatty-btn-danger:focus {
+  color: #fff;
+  border-color: #ff7875;
+  background: #ff7875;
+}
+.fatty-btn-danger:hover > a:only-child,
+.fatty-btn-danger:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-danger:hover > a:only-child::after,
+.fatty-btn-danger:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-danger:active {
+  color: #fff;
+  border-color: #d9363e;
+  background: #d9363e;
+}
+.fatty-btn-danger:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-danger:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-danger[disabled],
+.fatty-btn-danger[disabled]:hover,
+.fatty-btn-danger[disabled]:focus,
+.fatty-btn-danger[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-danger[disabled] > a:only-child,
+.fatty-btn-danger[disabled]:hover > a:only-child,
+.fatty-btn-danger[disabled]:focus > a:only-child,
+.fatty-btn-danger[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-danger[disabled] > a:only-child::after,
+.fatty-btn-danger[disabled]:hover > a:only-child::after,
+.fatty-btn-danger[disabled]:focus > a:only-child::after,
+.fatty-btn-danger[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-link {
+  color: #1890ff;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.fatty-btn-link > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-link:hover,
+.fatty-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.fatty-btn-link:hover > a:only-child,
+.fatty-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-link:hover > a:only-child::after,
+.fatty-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.fatty-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-link[disabled],
+.fatty-btn-link[disabled]:hover,
+.fatty-btn-link[disabled]:focus,
+.fatty-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-link[disabled] > a:only-child,
+.fatty-btn-link[disabled]:hover > a:only-child,
+.fatty-btn-link[disabled]:focus > a:only-child,
+.fatty-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-link[disabled] > a:only-child::after,
+.fatty-btn-link[disabled]:hover > a:only-child::after,
+.fatty-btn-link[disabled]:focus > a:only-child::after,
+.fatty-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-link:hover {
+  background: transparent;
+}
+.fatty-btn-link:hover,
+.fatty-btn-link:focus,
+.fatty-btn-link:active {
+  border-color: transparent;
+}
+.fatty-btn-link[disabled],
+.fatty-btn-link[disabled]:hover,
+.fatty-btn-link[disabled]:focus,
+.fatty-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-link[disabled] > a:only-child,
+.fatty-btn-link[disabled]:hover > a:only-child,
+.fatty-btn-link[disabled]:focus > a:only-child,
+.fatty-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-link[disabled] > a:only-child::after,
+.fatty-btn-link[disabled]:hover > a:only-child::after,
+.fatty-btn-link[disabled]:focus > a:only-child::after,
+.fatty-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-text {
+  color: rgba(0, 0, 0, 0.85);
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.fatty-btn-text > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-text:hover,
+.fatty-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.fatty-btn-text:hover > a:only-child,
+.fatty-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-text:hover > a:only-child::after,
+.fatty-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.fatty-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-text[disabled],
+.fatty-btn-text[disabled]:hover,
+.fatty-btn-text[disabled]:focus,
+.fatty-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-text[disabled] > a:only-child,
+.fatty-btn-text[disabled]:hover > a:only-child,
+.fatty-btn-text[disabled]:focus > a:only-child,
+.fatty-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-text[disabled] > a:only-child::after,
+.fatty-btn-text[disabled]:hover > a:only-child::after,
+.fatty-btn-text[disabled]:focus > a:only-child::after,
+.fatty-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-text:hover,
+.fatty-btn-text:focus {
+  color: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.018);
+  border-color: transparent;
+}
+.fatty-btn-text:active {
+  color: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.028);
+  border-color: transparent;
+}
+.fatty-btn-text[disabled],
+.fatty-btn-text[disabled]:hover,
+.fatty-btn-text[disabled]:focus,
+.fatty-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-text[disabled] > a:only-child,
+.fatty-btn-text[disabled]:hover > a:only-child,
+.fatty-btn-text[disabled]:focus > a:only-child,
+.fatty-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-text[disabled] > a:only-child::after,
+.fatty-btn-text[disabled]:hover > a:only-child::after,
+.fatty-btn-text[disabled]:focus > a:only-child::after,
+.fatty-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  background: #fff;
+}
+.fatty-btn-dangerous > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous:hover,
+.fatty-btn-dangerous:focus {
+  color: #ff7875;
+  border-color: #ff7875;
+  background: #fff;
+}
+.fatty-btn-dangerous:hover > a:only-child,
+.fatty-btn-dangerous:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous:hover > a:only-child::after,
+.fatty-btn-dangerous:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous:active {
+  color: #d9363e;
+  border-color: #d9363e;
+  background: #fff;
+}
+.fatty-btn-dangerous:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous[disabled],
+.fatty-btn-dangerous[disabled]:hover,
+.fatty-btn-dangerous[disabled]:focus,
+.fatty-btn-dangerous[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-dangerous[disabled] > a:only-child,
+.fatty-btn-dangerous[disabled]:hover > a:only-child,
+.fatty-btn-dangerous[disabled]:focus > a:only-child,
+.fatty-btn-dangerous[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous[disabled] > a:only-child::after,
+.fatty-btn-dangerous[disabled]:hover > a:only-child::after,
+.fatty-btn-dangerous[disabled]:focus > a:only-child::after,
+.fatty-btn-dangerous[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-primary {
+  color: #fff;
+  border-color: #ff4d4f;
+  background: #ff4d4f;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+.fatty-btn-dangerous.fatty-btn-primary > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-primary > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-primary:hover,
+.fatty-btn-dangerous.fatty-btn-primary:focus {
+  color: #fff;
+  border-color: #ff7875;
+  background: #ff7875;
+}
+.fatty-btn-dangerous.fatty-btn-primary:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-primary:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-primary:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-primary:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-primary:active {
+  color: #fff;
+  border-color: #d9363e;
+  background: #d9363e;
+}
+.fatty-btn-dangerous.fatty-btn-primary:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-primary:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-primary[disabled],
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:hover,
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:focus,
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-dangerous.fatty-btn-primary[disabled] > a:only-child,
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:focus > a:only-child,
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-primary[disabled] > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:focus > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-primary[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-link {
+  color: #ff4d4f;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.fatty-btn-dangerous.fatty-btn-link > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-link > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-link:hover,
+.fatty-btn-dangerous.fatty-btn-link:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.fatty-btn-dangerous.fatty-btn-link:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-link:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-link:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.fatty-btn-dangerous.fatty-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-link[disabled],
+.fatty-btn-dangerous.fatty-btn-link[disabled]:hover,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:focus,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-dangerous.fatty-btn-link[disabled] > a:only-child,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:focus > a:only-child,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-link[disabled] > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:focus > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-link:hover,
+.fatty-btn-dangerous.fatty-btn-link:focus {
+  color: #ff7875;
+  border-color: transparent;
+  background: transparent;
+}
+.fatty-btn-dangerous.fatty-btn-link:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-link:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-link:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-link:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-link:active {
+  color: #d9363e;
+  border-color: transparent;
+  background: transparent;
+}
+.fatty-btn-dangerous.fatty-btn-link:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-link:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-link[disabled],
+.fatty-btn-dangerous.fatty-btn-link[disabled]:hover,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:focus,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-dangerous.fatty-btn-link[disabled] > a:only-child,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:focus > a:only-child,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-link[disabled] > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:focus > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-link[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-text {
+  color: #ff4d4f;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.fatty-btn-dangerous.fatty-btn-text > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-text > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-text:hover,
+.fatty-btn-dangerous.fatty-btn-text:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+  background: transparent;
+}
+.fatty-btn-dangerous.fatty-btn-text:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-text:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-text:active {
+  color: #096dd9;
+  border-color: #096dd9;
+  background: transparent;
+}
+.fatty-btn-dangerous.fatty-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-text[disabled],
+.fatty-btn-dangerous.fatty-btn-text[disabled]:hover,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:focus,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-dangerous.fatty-btn-text[disabled] > a:only-child,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:focus > a:only-child,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-text[disabled] > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:focus > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-text:hover,
+.fatty-btn-dangerous.fatty-btn-text:focus {
+  color: #ff7875;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.018);
+}
+.fatty-btn-dangerous.fatty-btn-text:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-text:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-text:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-text:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-text:active {
+  color: #d9363e;
+  border-color: transparent;
+  background: rgba(0, 0, 0, 0.028);
+}
+.fatty-btn-dangerous.fatty-btn-text:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-text:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-dangerous.fatty-btn-text[disabled],
+.fatty-btn-dangerous.fatty-btn-text[disabled]:hover,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:focus,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-dangerous.fatty-btn-text[disabled] > a:only-child,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:hover > a:only-child,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:focus > a:only-child,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-dangerous.fatty-btn-text[disabled] > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:hover > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:focus > a:only-child::after,
+.fatty-btn-dangerous.fatty-btn-text[disabled]:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-icon-only {
+  width: 32px;
+  height: 32px;
+  padding: 2.4px 0;
+  font-size: 16px;
+  border-radius: 2px;
+  vertical-align: -3px;
+}
+.fatty-btn-icon-only > * {
+  font-size: 16px;
+}
+.fatty-btn-icon-only.fatty-btn-lg {
+  width: 40px;
+  height: 40px;
+  padding: 4.9px 0;
+  font-size: 18px;
+  border-radius: 2px;
+}
+.fatty-btn-icon-only.fatty-btn-lg > * {
+  font-size: 18px;
+}
+.fatty-btn-icon-only.fatty-btn-sm {
+  width: 24px;
+  height: 24px;
+  padding: 0px 0;
+  font-size: 14px;
+  border-radius: 2px;
+}
+.fatty-btn-icon-only.fatty-btn-sm > * {
+  font-size: 14px;
+}
+.fatty-btn-icon-only > .fattyicon {
+  display: flex;
+  justify-content: center;
+}
+.fatty-btn-icon-only .fattyicon-loading {
+  padding: 0 !important;
+}
+a.fatty-btn-icon-only {
+  vertical-align: -1px;
+}
+a.fatty-btn-icon-only > .fattyicon {
+  display: inline;
+}
+.fatty-btn-round {
+  height: 32px;
+  padding: 4px 16px;
+  font-size: 14px;
+  border-radius: 32px;
+}
+.fatty-btn-round.fatty-btn-lg {
+  height: 40px;
+  padding: 6.4px 20px;
+  font-size: 16px;
+  border-radius: 40px;
+}
+.fatty-btn-round.fatty-btn-sm {
+  height: 24px;
+  padding: 0px 12px;
+  font-size: 14px;
+  border-radius: 24px;
+}
+.fatty-btn-round.fatty-btn-icon-only {
+  width: auto;
+}
+.fatty-btn-circle {
+  min-width: 32px;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  border-radius: 50%;
+}
+.fatty-btn-circle.fatty-btn-lg {
+  min-width: 40px;
+  border-radius: 50%;
+}
+.fatty-btn-circle.fatty-btn-sm {
+  min-width: 24px;
+  border-radius: 50%;
+}
+.fatty-btn::before {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: 1;
+  display: none;
+  background: #fff;
+  border-radius: inherit;
+  opacity: 0.35;
+  transition: opacity 0.2s;
+  content: '';
+  pointer-events: none;
+}
+.fatty-btn .fattyicon {
+  transition: margin-left 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.fatty-btn .fattyicon.fattyicon-plus > svg,
+.fatty-btn .fattyicon.fattyicon-minus > svg {
+  shape-rendering: optimizespeed;
+}
+.fatty-btn.fatty-btn-loading {
+  position: relative;
+  cursor: default;
+}
+.fatty-btn.fatty-btn-loading::before {
+  display: block;
+}
+.fatty-btn > .fatty-btn-loading-icon {
+  transition:
+    width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.fatty-btn > .fatty-btn-loading-icon .fattyicon {
+  padding-right: 8px;
+  -webkit-animation: none;
+  animation: none;
+}
+.fatty-btn > .fatty-btn-loading-icon .fattyicon svg {
+  -webkit-animation: loadingCircle 1s infinite linear;
+  animation: loadingCircle 1s infinite linear;
+}
+.fatty-btn-group {
+  position: relative;
+  display: inline-flex;
+}
+.fatty-btn-group > .fatty-btn,
+.fatty-btn-group > span > .fatty-btn {
+  position: relative;
+}
+.fatty-btn-group > .fatty-btn:hover,
+.fatty-btn-group > span > .fatty-btn:hover,
+.fatty-btn-group > .fatty-btn:focus,
+.fatty-btn-group > span > .fatty-btn:focus,
+.fatty-btn-group > .fatty-btn:active,
+.fatty-btn-group > span > .fatty-btn:active {
+  z-index: 2;
+}
+.fatty-btn-group > .fatty-btn[disabled],
+.fatty-btn-group > span > .fatty-btn[disabled] {
+  z-index: 0;
+}
+.fatty-btn-group .fatty-btn-icon-only {
+  font-size: 14px;
+}
+.fatty-btn-group .fatty-btn + .fatty-btn,
+.fatty-btn + .fatty-btn-group,
+.fatty-btn-group span + .fatty-btn,
+.fatty-btn-group .fatty-btn + span,
+.fatty-btn-group > span + span,
+.fatty-btn-group + .fatty-btn,
+.fatty-btn-group + .fatty-btn-group {
+  margin-left: -1px;
+}
+.fatty-btn-group
+  .fatty-btn-primary
+  + .fatty-btn:not(.fatty-btn-primary):not([disabled]) {
+  border-left-color: transparent;
+}
+.fatty-btn-group .fatty-btn {
+  border-radius: 0;
+}
+.fatty-btn-group > .fatty-btn:first-child,
+.fatty-btn-group > span:first-child > .fatty-btn {
+  margin-left: 0;
+}
+.fatty-btn-group > .fatty-btn:only-child {
+  border-radius: 2px;
+}
+.fatty-btn-group > span:only-child > .fatty-btn {
+  border-radius: 2px;
+}
+.fatty-btn-group > .fatty-btn:first-child:not(:last-child),
+.fatty-btn-group > span:first-child:not(:last-child) > .fatty-btn {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.fatty-btn-group > .fatty-btn:last-child:not(:first-child),
+.fatty-btn-group > span:last-child:not(:first-child) > .fatty-btn {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.fatty-btn-group-sm > .fatty-btn:only-child {
+  border-radius: 2px;
+}
+.fatty-btn-group-sm > span:only-child > .fatty-btn {
+  border-radius: 2px;
+}
+.fatty-btn-group-sm > .fatty-btn:first-child:not(:last-child),
+.fatty-btn-group-sm > span:first-child:not(:last-child) > .fatty-btn {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.fatty-btn-group-sm > .fatty-btn:last-child:not(:first-child),
+.fatty-btn-group-sm > span:last-child:not(:first-child) > .fatty-btn {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.fatty-btn-group > .fatty-btn-group {
+  float: left;
+}
+.fatty-btn-group
+  > .fatty-btn-group:not(:first-child):not(:last-child)
+  > .fatty-btn {
+  border-radius: 0;
+}
+.fatty-btn-group
+  > .fatty-btn-group:first-child:not(:last-child)
+  > .fatty-btn:last-child {
+  padding-right: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.fatty-btn-group
+  > .fatty-btn-group:last-child:not(:first-child)
+  > .fatty-btn:first-child {
+  padding-left: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.fatty-btn-rtl.fatty-btn-group .fatty-btn + .fatty-btn,
+.fatty-btn-rtl.fatty-btn + .fatty-btn-group,
+.fatty-btn-rtl.fatty-btn-group span + .fatty-btn,
+.fatty-btn-rtl.fatty-btn-group .fatty-btn + span,
+.fatty-btn-rtl.fatty-btn-group > span + span,
+.fatty-btn-rtl.fatty-btn-group + .fatty-btn,
+.fatty-btn-rtl.fatty-btn-group + .fatty-btn-group,
+.fatty-btn-group-rtl.fatty-btn-group .fatty-btn + .fatty-btn,
+.fatty-btn-group-rtl.fatty-btn + .fatty-btn-group,
+.fatty-btn-group-rtl.fatty-btn-group span + .fatty-btn,
+.fatty-btn-group-rtl.fatty-btn-group .fatty-btn + span,
+.fatty-btn-group-rtl.fatty-btn-group > span + span,
+.fatty-btn-group-rtl.fatty-btn-group + .fatty-btn,
+.fatty-btn-group-rtl.fatty-btn-group + .fatty-btn-group {
+  margin-right: -1px;
+  margin-left: auto;
+}
+.fatty-btn-group.fatty-btn-group-rtl {
+  direction: rtl;
+}
+.fatty-btn-group-rtl.fatty-btn-group > .fatty-btn:first-child:not(:last-child),
+.fatty-btn-group-rtl.fatty-btn-group
+  > span:first-child:not(:last-child)
+  > .fatty-btn {
+  border-radius: 0 2px 2px 0;
+}
+.fatty-btn-group-rtl.fatty-btn-group > .fatty-btn:last-child:not(:first-child),
+.fatty-btn-group-rtl.fatty-btn-group
+  > span:last-child:not(:first-child)
+  > .fatty-btn {
+  border-radius: 2px 0 0 2px;
+}
+.fatty-btn-group-rtl.fatty-btn-group-sm
+  > .fatty-btn:first-child:not(:last-child),
+.fatty-btn-group-rtl.fatty-btn-group-sm
+  > span:first-child:not(:last-child)
+  > .fatty-btn {
+  border-radius: 0 2px 2px 0;
+}
+.fatty-btn-group-rtl.fatty-btn-group-sm
+  > .fatty-btn:last-child:not(:first-child),
+.fatty-btn-group-rtl.fatty-btn-group-sm
+  > span:last-child:not(:first-child)
+  > .fatty-btn {
+  border-radius: 2px 0 0 2px;
+}
+.fatty-btn:focus > span,
+.fatty-btn:active > span {
+  position: relative;
+}
+.fatty-btn > .fattyicon + span,
+.fatty-btn > span + .fattyicon {
+  margin-left: 8px;
+}
+.fatty-btn.fatty-btn-background-ghost {
+  color: #fff;
+  border-color: #fff;
+}
+.fatty-btn.fatty-btn-background-ghost,
+.fatty-btn.fatty-btn-background-ghost:hover,
+.fatty-btn.fatty-btn-background-ghost:active,
+.fatty-btn.fatty-btn-background-ghost:focus {
+  background: transparent;
+}
+.fatty-btn.fatty-btn-background-ghost:hover,
+.fatty-btn.fatty-btn-background-ghost:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+}
+.fatty-btn.fatty-btn-background-ghost:active {
+  color: #096dd9;
+  border-color: #096dd9;
+}
+.fatty-btn.fatty-btn-background-ghost[disabled] {
+  color: rgba(0, 0, 0, 0.25);
+  background: transparent;
+  border-color: #d9d9d9;
+}
+.fatty-btn-background-ghost.fatty-btn-primary {
+  color: #1890ff;
+  border-color: #1890ff;
+  text-shadow: none;
+}
+.fatty-btn-background-ghost.fatty-btn-primary > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-primary > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-primary:hover,
+.fatty-btn-background-ghost.fatty-btn-primary:focus {
+  color: #40a9ff;
+  border-color: #40a9ff;
+}
+.fatty-btn-background-ghost.fatty-btn-primary:hover > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-primary:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-primary:hover > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-primary:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-primary:active {
+  color: #096dd9;
+  border-color: #096dd9;
+}
+.fatty-btn-background-ghost.fatty-btn-primary:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-primary:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-primary[disabled],
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:hover,
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:focus,
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-background-ghost.fatty-btn-primary[disabled] > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:hover > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:focus > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-primary[disabled] > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:hover
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:focus
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-primary[disabled]:active
+  > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-danger {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  text-shadow: none;
+}
+.fatty-btn-background-ghost.fatty-btn-danger > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-danger > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-danger:hover,
+.fatty-btn-background-ghost.fatty-btn-danger:focus {
+  color: #ff7875;
+  border-color: #ff7875;
+}
+.fatty-btn-background-ghost.fatty-btn-danger:hover > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-danger:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-danger:hover > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-danger:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-danger:active {
+  color: #d9363e;
+  border-color: #d9363e;
+}
+.fatty-btn-background-ghost.fatty-btn-danger:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-danger:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-danger[disabled],
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:hover,
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:focus,
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-background-ghost.fatty-btn-danger[disabled] > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:hover > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:focus > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-danger[disabled] > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:hover
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:focus
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-danger[disabled]:active
+  > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+  text-shadow: none;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous:hover,
+.fatty-btn-background-ghost.fatty-btn-dangerous:focus {
+  color: #ff7875;
+  border-color: #ff7875;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous:hover > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-dangerous:focus > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous:hover > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-dangerous:focus > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous:active {
+  color: #d9363e;
+  border-color: #d9363e;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous:active > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled],
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:hover,
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:focus,
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled] > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:hover > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:focus > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:active
+  > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled] > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:hover
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:focus
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-dangerous[disabled]:active
+  > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link {
+  color: #ff4d4f;
+  border-color: transparent;
+  text-shadow: none;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link
+  > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:hover,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:focus {
+  color: #ff7875;
+  border-color: transparent;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:hover
+  > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:focus
+  > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:hover
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:focus
+  > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:active {
+  color: #d9363e;
+  border-color: transparent;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:active
+  > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link:active
+  > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled],
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:hover,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:focus,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: #d9d9d9;
+  background: #f5f5f5;
+  text-shadow: none;
+  box-shadow: none;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]
+  > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:hover
+  > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:focus
+  > a:only-child,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:active
+  > a:only-child {
+  color: currentcolor;
+}
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:hover
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:focus
+  > a:only-child::after,
+.fatty-btn-background-ghost.fatty-btn-dangerous.fatty-btn-link[disabled]:active
+  > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+.fatty-btn-two-chinese-chars::first-letter {
+  letter-spacing: 0.34em;
+}
+.fatty-btn-two-chinese-chars > *:not(.fattyicon) {
+  margin-right: -0.34em;
+  letter-spacing: 0.34em;
+}
+.fatty-btn.fatty-btn-block {
+  width: 100%;
+}
+.fatty-btn:empty {
+  display: inline-block;
+  width: 0;
+  visibility: hidden;
+  content: '\a0';
+}
+a.fatty-btn {
+  padding-top: 0.01px !important;
+  line-height: 30px;
+}
+a.fatty-btn-disabled {
+  cursor: not-allowed;
+}
+a.fatty-btn-disabled > * {
+  pointer-events: none;
+}
+a.fatty-btn-disabled,
+a.fatty-btn-disabled:hover,
+a.fatty-btn-disabled:focus,
+a.fatty-btn-disabled:active {
+  color: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  background: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+a.fatty-btn-disabled > a:only-child,
+a.fatty-btn-disabled:hover > a:only-child,
+a.fatty-btn-disabled:focus > a:only-child,
+a.fatty-btn-disabled:active > a:only-child {
+  color: currentcolor;
+}
+a.fatty-btn-disabled > a:only-child::after,
+a.fatty-btn-disabled:hover > a:only-child::after,
+a.fatty-btn-disabled:focus > a:only-child::after,
+a.fatty-btn-disabled:active > a:only-child::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  content: '';
+}
+a.fatty-btn-lg {
+  line-height: 38px;
+}
+a.fatty-btn-sm {
+  line-height: 22px;
+}
+.fatty-btn-rtl {
+  direction: rtl;
+}
+.fatty-btn-group-rtl.fatty-btn-group
+  .fatty-btn-primary:last-child:not(:first-child),
+.fatty-btn-group-rtl.fatty-btn-group .fatty-btn-primary + .fatty-btn-primary {
+  border-right-color: #40a9ff;
+  border-left-color: #d9d9d9;
+}
+.fatty-btn-group-rtl.fatty-btn-group
+  .fatty-btn-primary:last-child:not(:first-child)[disabled],
+.fatty-btn-group-rtl.fatty-btn-group
+  .fatty-btn-primary
+  + .fatty-btn-primary[disabled] {
+  border-right-color: #d9d9d9;
+  border-left-color: #40a9ff;
+}
+.fatty-btn-rtl.fatty-btn > .fatty-btn-loading-icon .fattyicon {
+  padding-right: 0;
+  padding-left: 8px;
+}
+.fatty-btn-rtl.fatty-btn > .fattyicon + span,
+.fatty-btn-rtl.fatty-btn > span + .fattyicon {
+  margin-right: 8px;
+  margin-left: 0;
+}

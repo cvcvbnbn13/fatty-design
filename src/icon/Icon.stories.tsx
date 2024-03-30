@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
-import Button from './index'
+import Icon from './index'
 import React from 'react'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Icon',
+  component: Icon,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
@@ -24,62 +24,25 @@ const meta = {
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   // args: { onClick: fn() },
-} satisfies Meta<typeof Button>
+} satisfies Meta<typeof Icon>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
-const style = {
-  marginLeft: 8,
-}
-
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Normal: Story = {
+export const FixedIcon: Story = {
   args: {
-    type: 'normal',
-    children: 'Button',
+    type: 'fixed',
+  },
+}
+export const CopyIcon: Story = {
+  args: {
+    type: 'copy',
   },
 }
 
-export const Basic = () => {
-  return (
-    <React.Fragment>
-      <Button style={style} type="dashed">
-        Dashed Button
-      </Button>
-      <Button style={style} type="primary">
-        Primary Button
-      </Button>
-      <Button style={style} type="text">
-        Text Button
-      </Button>
-      <Button style={style} type="link">
-        Link Button
-      </Button>
-      <Button style={style} type="normal">
-        Default Button
-      </Button>
-    </React.Fragment>
-  )
-}
-
-export const Primary: Story = {
+export const CloseIcon: Story = {
   args: {
-    type: 'primary',
-    children: 'Button',
+    type: 'close',
   },
 }
-
-// export const Large: Story = {
-//   args: {
-//     size: 'large',
-//     label: 'Button',
-//   },
-// }
-
-// export const Small: Story = {
-//   args: {
-//     size: 'small',
-//     label: 'Button',
-//   },
-// }
