@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
 import classNames from 'classnames'
-import './index.scss'
 
 interface IProps extends React.HTMLAttributes<HTMLOrSVGElement> {
   type?: 'fixed' | 'copy' | 'close'
@@ -71,6 +70,8 @@ const Icon: FC<IProps> = ({
   if (size) {
     style.width = size
     style.height = size
+    style.verticalAlign = 'text-top'
+    style.cursor = 'pointer'
   }
 
   if (type && type in svgMap) {
@@ -78,6 +79,7 @@ const Icon: FC<IProps> = ({
     return React.cloneElement(svg, {
       className: cls,
       style,
+      ...props,
     })
   }
 
