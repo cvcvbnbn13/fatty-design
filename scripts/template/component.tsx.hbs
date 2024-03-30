@@ -11,7 +11,7 @@ export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
   testId?: string
 }
 
-const {{componentName}} =: FC<IProps> = ({
+const {{componentName}} : FC<IProps> = ({
   className,
   type = 'normal',
   children,
@@ -21,9 +21,9 @@ const {{componentName}} =: FC<IProps> = ({
   ...props
 }) => {
   const cls = classNames({
-    'fatty-btn': true,
-    [`fatty-btn-${size}`]: size,
-    [`fatty-btn-${type}`]: type,
+    'fatty-{{componentName}}': true,
+    [`fatty-{{componentName}}-${size}`]: size,
+    [`fatty-{{componentName}}-${type}`]: type,
     [className as string]: !!className,
   })
 

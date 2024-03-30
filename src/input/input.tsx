@@ -11,7 +11,7 @@ export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
   testId?: string
 }
 
-const Input =: FC<IProps> = ({
+const Input: FC<IProps> = ({
   className,
   type = 'normal',
   children,
@@ -21,17 +21,17 @@ const Input =: FC<IProps> = ({
   ...props
 }) => {
   const cls = classNames({
-    'fatty-btn': true,
-    [`fatty-btn-${size}`]: size,
-    [`fatty-btn-${type}`]: type,
+    'fatty-input': true,
+    [`fatty-input-${size}`]: size,
+    [`fatty-input-${type}`]: type,
     [className as string]: !!className,
   })
 
   return (
-    <Input  {...props} style={style} className={cls} data-testid={testId}>
+    <Input {...props} style={style} className={cls} data-testid={testId}>
       {children}
-    </Input >
+    </Input>
   )
 }
 
-export default Input 
+export default Input
