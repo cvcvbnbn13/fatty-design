@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import './index.scss'
 
 export interface IProps extends React.HTMLAttributes<HTMLInputElement> {
+  value?: string
   className?: string
   children?: React.ReactNode
   style?: CSSProperties
@@ -19,6 +20,7 @@ const Radio: FC<IProps> = ({
   style,
   testId,
   disabled,
+  value,
   onChange,
   ...props
 }) => {
@@ -59,7 +61,12 @@ const Radio: FC<IProps> = ({
   return (
     <span className={wrapperCls} onClick={handleClick}>
       <span className={cls} data-testid={testId}>
-        <input type="radio" className="fatty-radio-input" ref={inputEl} />
+        <input
+          type="radio"
+          className="fatty-radio-input"
+          value={value}
+          ref={inputEl}
+        />
         <span className="fatty-radio-inner"></span>
       </span>
       <span>{children}</span>
