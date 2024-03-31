@@ -34,14 +34,21 @@ const style = {
 }
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Normal: Story = {
+export const Basic: Story = {
   args: {
     type: 'normal',
     children: 'Button',
   },
 }
 
-export const Basic = () => {
+export const Primary: Story = {
+  args: {
+    type: 'primary',
+    children: 'Button',
+  },
+}
+
+export const Group = () => {
   return (
     <React.Fragment>
       <Button style={style} type="dashed">
@@ -63,23 +70,16 @@ export const Basic = () => {
   )
 }
 
-export const Primary: Story = {
+export const Large: Story = {
   args: {
-    type: 'primary',
+    size: 'large',
     children: 'Button',
   },
 }
 
-// export const Large: Story = {
-//   args: {
-//     size: 'large',
-//     label: 'Button',
-//   },
-// }
-
-// export const Small: Story = {
-//   args: {
-//     size: 'small',
-//     label: 'Button',
-//   },
-// }
+export const Small: Story = {
+  args: {
+    size: 'small',
+    children: 'Button',
+  },
+}

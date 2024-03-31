@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import Input from './index'
+import Checkbox from './index'
 import React from 'react'
 
 const meta = {
-  title: 'Example/Input',
-  component: Input,
+  title: 'Example/Checkbox',
+  component: Checkbox,
   parameters: {
     layout: 'centered',
   },
@@ -16,7 +16,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof Input>
+} satisfies Meta<typeof Checkbox>
 
 export default meta
 type Story = StoryObj<typeof meta>
@@ -24,7 +24,7 @@ type Story = StoryObj<typeof meta>
 export const Basic = () => {
   return (
     <React.Fragment>
-      <Input type="primary">Input</Input>
+      <Checkbox type="primary">Checkbox</Checkbox>
     </React.Fragment>
   )
 }

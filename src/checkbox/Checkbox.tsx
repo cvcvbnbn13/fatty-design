@@ -11,7 +11,7 @@ export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
   testId?: string
 }
 
-const Input: FC<IProps> = ({
+const Checkbox : FC<IProps> = ({
   className,
   type = 'normal',
   children,
@@ -21,17 +21,17 @@ const Input: FC<IProps> = ({
   ...props
 }) => {
   const cls = classNames({
-    'fatty-input': true,
-    [`fatty-input-${size}`]: size,
-    [`fatty-input-${type}`]: type,
+    'fatty-Checkbox': true,
+    [`fatty-Checkbox-${size}`]: size,
+    [`fatty-Checkbox-${type}`]: type,
     [className as string]: !!className,
   })
 
   return (
-    <Input {...props} style={style} className={cls} data-testid={testId}>
+    <span  {...props} style={style} className={cls} data-testid={testId}>
       {children}
-    </Input>
+    </span >
   )
 }
 
-export default Input
+export default Checkbox 

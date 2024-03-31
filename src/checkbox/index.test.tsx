@@ -1,10 +1,10 @@
 import React from 'react'
 import { fireEvent, render, screen } from '@testing-library/react'
-import Input from './index'
+import Checkbox from './index'
 
-describe('Input', () => {
-  test('renders normal Input', () => {
-    render(<Input>Click Me</Input>)
+describe('Checkbox', () => {
+  test('renders normal Checkbox', () => {
+    render(<Checkbox>Click Me</Checkbox>)
 
     const target = screen.getByText(/Click Me/i)
 
@@ -14,11 +14,11 @@ describe('Input', () => {
   })
 
 /**
-  test('renders small Input', () => {
+  test('renders small Checkbox', () => {
     render(
-      <Input type="primary" size="small" testId="fatty-btn-small">
+      <Checkbox type="primary" size="small" testId="fatty-btn-small">
         Click Me
-      </Input>
+      </Checkbox>
     )
 
     expect(screen.getByTestId('fatty-btn-small')).toBeInTheDocument()
@@ -29,9 +29,9 @@ describe('Input', () => {
   test('should support click', () => {
     const onClick = jest.fn()
     render(
-      <Input type="primary" testId="fatty-btn-primary" onClick={onClick}>
+      <Checkbox type="primary" testId="fatty-btn-primary" onClick={onClick}>
         Click Me
-      </Input>
+      </Checkbox>
     )
 
     const element = screen.getByText(/click me/i)
