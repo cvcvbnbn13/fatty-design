@@ -70,12 +70,12 @@ const Checkbox: FC<IProps> = ({
     [`${prefixCls}checkbox`]: true,
     [`${prefixCls}checkbox`]: true,
     [`${prefixCls}checkbox-checked`]: checked,
-    [`${prefixCls}checkbox-disabled`]: cdisabled,
+    [`${prefixCls}checkbox-disabled`]: cdisabled || disabled,
   })
 
   const wrapperCls = classNames({
     [`${prefixCls}checkbox-wrapper`]: true,
-    [`${prefixCls}checkbox-wrapper-disabled`]: cdisabled,
+    [`${prefixCls}checkbox-wrapper-disabled`]: cdisabled || disabled,
   })
 
   useEffect(() => {
