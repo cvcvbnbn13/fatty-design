@@ -41,4 +41,13 @@ const lowCase = str =>
 
     console.log(chalk.green(`write ${newPath} success`))
   })
+
+  const response = await fetch(
+    `https://unpkg.com/antd@4.19.5/es/${dirName}/style/index.css`
+  )
+  const body = await response.text()
+
+  const scssFile = path.join(process.cwd(), `src/${dirName}/index.scss`)
+  await fs.writeFile(scssFile, body)
+  console.log(chalk.green(`update ${scssFile} success`))
 })()

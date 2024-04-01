@@ -21,9 +21,9 @@ const {{componentName}} : FC<IProps> = ({
   ...props
 }) => {
   const cls = classNames({
-    'fatty-{{componentName}}': true,
-    [`fatty-{{componentName}}-${size}`]: size,
-    [`fatty-{{componentName}}-${type}`]: type,
+    'fatty-{{dirName}}': true,
+    [`fatty-{{dirName}}-${size}`]: size,
+    [`fatty-{{dirName}}-${type}`]: type,
     [className as string]: !!className,
   })
 
