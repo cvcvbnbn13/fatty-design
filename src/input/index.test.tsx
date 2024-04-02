@@ -4,40 +4,29 @@ import Input from './index'
 
 describe('Input', () => {
   test('renders normal Input', () => {
-    render(<Input>Click Me</Input>)
+    render(<Input value="normal" testId="Input-normal" />)
 
-    const target = screen.getByText(/Click Me/i)
+    const target = screen.getByTestId('Input-normal')
 
-    expect(target).toBeInTheDocument(
-      
-    )
+    expect(target).toBeInTheDocument()
   })
 
-/**
-  test('renders small Input', () => {
+  test('should support defaultValue', () => {
+    const onChange = jest.fn()
     render(
-      <Input type="primary" size="small" testId="fatty-btn-small">
-        Click Me
-      </Input>
+      <Input
+        defaultValue="default"
+        testId="Input-with-defaultValut"
+        onChange={onChange}
+      />
     )
 
-    expect(screen.getByTestId('fatty-btn-small')).toBeInTheDocument()
+    const element = screen.getByTestId('Input-with-defaultValut')
 
-    expect(screen.getByTestId('fatty-btn-small')).toHaveClass('fatty-btn-small')
+    expect(element.getAttribute('value')).toBe('default')
+
+    fireEvent.change(element, { target: { value: 'new value' } })
+    expect(onChange).toBeCalledTimes(1)
+    expect(element.getAttribute('value')).toBe('new value')
   })
-
-  test('should support click', () => {
-    const onClick = jest.fn()
-    render(
-      <Input type="primary" testId="fatty-btn-primary" onClick={onClick}>
-        Click Me
-      </Input>
-    )
-
-    const element = screen.getByText(/click me/i)
-    fireEvent.click(element)
-
-    expect(onClick).toBeCalled()
-  })
-**/
 })

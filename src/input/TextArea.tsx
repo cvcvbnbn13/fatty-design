@@ -1,6 +1,18 @@
-import React, { FC, CSSProperties, useState, useEffect, ReactNode } from 'react'
+import React, {
+  FC,
+  CSSProperties,
+  useState,
+  useRef,
+  useEffect,
+  ReactNode,
+} from 'react'
 import classNames from 'classnames'
 import './index.scss'
+
+type autoSizeType = {
+  minRows: number
+  maxRows: number
+}
 
 export interface IProps {
   className?: string
@@ -13,6 +25,8 @@ export interface IProps {
   prefix?: ReactNode
   placeholder?: string
   maxLength?: number
+  autoSize?: boolean | autoSizeType
+  status?: 'error' | 'warning'
   onChange?: (event: React.FormEvent<HTMLTextAreaElement>) => void
 }
 
@@ -24,11 +38,15 @@ const TextArea: FC<IProps> = ({
   defaultValue,
   prefix,
   showCount,
+  autoSize = false,
+  status,
   value: pValue,
   onChange,
   ...props
 }) => {
   const [value, setValue] = useState(defaultValue || pValue || '')
+  const [height, setHeight] = useState(0)
+  const textAreaRef = useRef(null)
 
   const cls = classNames({
     'fatty-input': true,
@@ -42,9 +60,52 @@ const TextArea: FC<IProps> = ({
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     if (!pValue) {
-      setValue(e.target.value)
+      const value = e.target.value
+      setValue(value)
+      let line = value.split('\n').length
+
+      if (typeof autoSize === 'object') {
+        const { minRows, maxRows } = autoSize
+        const textAreaStyle = window.getComputedStyle(textAreaRef.current!)
+        const minHeight = minRows * parseFloat(textAreaStyle.lineHeight)
+        const maxHeight = maxRows * parseFloat(textAreaStyle.lineHeight)
+
+        // @ts-ignore
+        textAreaRef.current.setAttribute(
+          'style',
+          `min-height: ${minHeight}px; max-height: ${maxHeight}px; `
+        )
+      }
+
+      if (autoSize) {
+        if (line < 2) line = 2
+        const textAreaStyle = window.getComputedStyle(textAreaRef.current!)
+
+        const textAreaHeight =
+          parseFloat(textAreaStyle.paddingTop) +
+          parseFloat(textAreaStyle.paddingBottom) +
+          parseFloat(textAreaStyle.borderTopWidth) +
+          parseFloat(textAreaStyle.borderBottomWidth)
+
+        const contentHeight = line * parseFloat(textAreaStyle.lineHeight)
+        const totalHeight = textAreaHeight + contentHeight
+        setHeight(totalHeight)
+      }
     }
     onChange?.(e)
+  }
+
+  useEffect(() => {
+    if (pValue) {
+      setValue(pValue)
+    }
+  }, [pValue])
+
+  console.log(height)
+
+  const autoSizeStyle: CSSProperties = {}
+  if (height) {
+    autoSizeStyle.height = height
   }
 
   const textarea = (
@@ -53,14 +114,10 @@ const TextArea: FC<IProps> = ({
       className={cls}
       value={value}
       onChange={handleChange}
+      ref={textAreaRef}
+      style={autoSizeStyle}
     />
   )
-
-  useEffect(() => {
-    if (pValue) {
-      setValue(pValue)
-    }
-  }, [pValue])
 
   if (showCount) {
     return (

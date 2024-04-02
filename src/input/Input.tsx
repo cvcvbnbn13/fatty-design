@@ -51,7 +51,13 @@ const Input: FC<IProps> = ({
   }
 
   const input = (
-    <input {...props} className={cls} value={value} onChange={handleChange} />
+    <input
+      {...props}
+      className={cls}
+      data-testid={testId}
+      value={value}
+      onChange={handleChange}
+    />
   )
 
   useEffect(() => {
